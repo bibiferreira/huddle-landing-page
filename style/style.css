@@ -91,6 +91,11 @@ nav > img {
   cursor: pointer;
 }
 
+.btn-primary:active {
+  background-color: #fe52c0;
+  color: #fff;
+}
+
 .btn-secondary {
   padding: 20px 50px;
   border-radius: 40px;
@@ -98,9 +103,12 @@ nav > img {
   background-color: #fe52c0;
   font-weight: bold;
   border: none;
-  opacity: 0.6;
   color: #fff;
   cursor: pointer;
+}
+
+.btn-secondary:hover {
+  opacity: 0.6;
 }
 
 /* CARDS */
@@ -112,7 +120,6 @@ nav > img {
   padding: 30px;
   justify-content: space-between;
 }
-
 
 .img-card {
   flex-basis: 40%;
@@ -136,9 +143,7 @@ nav > img {
   margin-bottom: 7px;
 }
 
-
 /* FOOTER */
-
 .bottom {
   color: white;
   background-image: linear-gradient(#00252e, #00252e);
@@ -147,7 +152,7 @@ nav > img {
   background-position: bottom;
 }
 
-.anuncio {
+.get-started {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -161,19 +166,106 @@ nav > img {
   margin: 0 auto;
 }
 
-.anuncio h3 {
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  justify-content: space-evenly;
+}
+
+.contact-info #logo-white {
+  width: 120px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.get-started h3 {
   font-size: 25px;
 }
 
-.anuncio button {
+.footer-item a {
+  line-height: 1.8;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info img {
+  height: 12px;
+}
+
+.bottom p, a {
+  line-height: 2;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.get-started button {
   padding: 20px 50px;
   border-radius: 40px;
   text-align: center;
   background-color: #fe52c0;
-  opacity: 0.6;
   border: none;
   color: #fff;
   cursor: pointer;
   margin-top: 30px;
   font-weight: bold;
+}
+
+.get-started button:hover {
+  opacity: 0.6;
+}
+
+.contact-info {
+  flex-basis: 30%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.footer-item {
+  flex-basis: 15%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-social {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer-social p {
+  font-size: 10px;
+}
+
+.footer-social i  {
+  font-family: "Font Awesome 5 Brands";
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.footer-social i:hover {
+  color: #fe52c0;
+}
+
+.attribution {
+  text-align: center;
+  padding: 20px;
 }
